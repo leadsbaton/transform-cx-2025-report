@@ -251,19 +251,18 @@ p {
 
 /* CTA section */
 .cta {
-    padding: 4rem 2rem;
+    padding: 2rem 2rem;
     text-align: center;
-    background: linear-gradient(to bottom, #0a1128, #1c3144);
     color: white;
 }
 
-.cta h2 {
+.cta h4 {
     color: white;
 }
 
 .cta-text {
     margin-bottom: 2rem;
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
 
 /* Logo slider */
