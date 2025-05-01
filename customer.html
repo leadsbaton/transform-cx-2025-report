@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,11 +8,21 @@
   <meta name="description" content="A detailed analysis of the impact of AI and key customer service metrics">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="assets/css/style2.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="/transform-cx-2025-report/assets/css/style2.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-  <main>
+  <main class="pt-24"> <!-- Adjust value as per header height -->
+
+
+    <!-- Navbar -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-white dark:bg-gray-900 flex justify-between items-center p-6">
+      <img src="assets/images/headerLogoLight.webp" alt="Header Logo" class="h-10">
+    </header>
+
     <!-- Hero Section -->
     <section class="hero-section">
       <div class="container">
@@ -30,7 +41,7 @@
             </button>
           </div>
           <div class="report-image">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-7Vq5BQhi3Jqy9BCBS6L2J9ewCctxqN.png" alt="Benchmark report cover">
+            <img src="assets/images/whitepaper.webp" alt="Benchmark report cover">
           </div>
         </div>
       </div>
@@ -41,7 +52,7 @@
       <div class="container">
         <div class="grid-cols-2">
           <div class="service-image">
-            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xFu5nsOLChU0le7KNs5FTBertugDHC.png" alt="Customer service representative">
+            <img src="assets/images/image.png" alt="Customer service representative">
           </div>
           <div>
             <div class="uppercase text-sm font-medium tracking-wide mb-4 text-center text-left-md">
@@ -119,10 +130,10 @@
         <h3 class="text-2xl font-bold mb-10 text-center">Recommended by leading industry experts</h3>
 
         <div class="logos-grid">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K6kkGiSw3W3pvtCsHIqzpQpf98DXcA.png" alt="Gartner" class="logo">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K6kkGiSw3W3pvtCsHIqzpQpf98DXcA.png" alt="Top 100" class="logo">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K6kkGiSw3W3pvtCsHIqzpQpf98DXcA.png" alt="Forrester" class="logo">
-          <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-K6kkGiSw3W3pvtCsHIqzpQpf98DXcA.png" alt="Top Rated 2021" class="logo">
+          <img src="assets/images/gartner.webp" alt="Gartner" class="logo">
+          <img src="assets/images/G2-Best-software-award-2023.webp" alt="Top 100 Software Products" class="logo">
+          <img src="assets/images/Forrester-Accolade-220x240.webp" alt="Forrester" class="logo">
+          <img src="assets/images/TopRated.webp" alt="Top Rated 2021" class="logo">
         </div>
       </div>
     </section>
@@ -175,21 +186,26 @@
                 <label for="companyEmail">
                   Company Email Address<span class="required">*</span>
                 </label>
-                <input id="companyEmail" name="companyEmail" type="email" placeholder="Company Email Address" class="form-input" required>
+                <input id="companyEmail" name="companyEmail" type="email" placeholder="Company Email Address"
+                  class="form-input" required>
               </div>
               <div class="form-group">
                 <label for="phoneNumber">
                   Phone Number<span class="required">*</span>
                 </label>
-                <input id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" class="form-input" required>
+                <input id="phoneNumber" name="phoneNumber" placeholder="Enter your phone number" class="form-input"
+                  required>
               </div>
+
+              <!-- Hidden timestamp field -->
+              <input type="hidden" name="timestamp" id="timestamp" />
               <button type="submit" class="btn btn-primary btn-full">
                 Download The Report
               </button>
               <p class="privacy-notice">
                 By clicking "DOWNLOAD THE REPORT", I understand that Freshworks will process my personal information
                 in accordance with its
-                <a href="#" class="privacy-link">
+                <a href="https://www.freshworks.com/privacy/" class="privacy-link">
                   Privacy Notice
                 </a>
                 and consent to receiving marketing communications related to Freshworks' business, services, and
@@ -200,8 +216,17 @@
         </div>
       </div>
     </section>
+
+    <section class="cta" style="background-color: black; color: white;">
+      <div class="container">
+        <h4>Privacy Policy</h4>
+        <p style="font-size: 1rem;">&copy; 2025 Tech IQ Papers, All Rights Reserved</p>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script type="module" src="assets/js/script2.js"></script>
 </body>
+
 </html>
